@@ -1,6 +1,6 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
+![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+# Tiny Tapeout Analog Project Template
 
 - [Read the documentation for project](docs/info.md)
 
@@ -10,14 +10,16 @@ TinyTapeout is an educational project that aims to make it easier and cheaper th
 
 To learn more and get started, visit https://tinytapeout.com.
 
-## Verilog Projects
+## Analog projects
 
-1. Add your Verilog files to the `src` folder.
-2. Edit the [info.yaml](info.yaml) and update information about your project, paying special attention to the `source_files` and `top_module` properties. If you are upgrading an existing Tiny Tapeout project, check out our [online info.yaml migration tool](https://tinytapeout.github.io/tt-yaml-upgrade-tool/).
-3. Edit [docs/info.md](docs/info.md) and add a description of your project.
-4. Optionally, add a testbench to the `test` folder. See [test/README.md](test/README.md) for more information.
+1. Edit the [info.yaml](info.yaml) to update information about your project and set your `top_module` property.
+2. Use one of the [analog templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt06/def/analog) as a starting point for your design. Save the resulting GDS file in the `gds` folder, and the LEF file in the `lef` folder. The file names must match your `top_module` property (e.g. `gds/tt_um_example.gds`).
+3. Edit [src/project.v](src/project.v) and replace `tt_um_example` with the actual name of your top module.
+4. Edit [docs/info.md](docs/info.md) and add a description of your project.
 
-The GitHub action will automatically build the ASIC files using [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/).
+For more info, see the [analog specs page](https://tinytapeout.com/specs/analog/).
+
+*Note*: Analog designs are currently in beta. There's a small chance that the changes will change before the deadline for Tiny Tapeout 6, or that we will have to postpone the analog design support to a future shuttle. If you have any questions, please join the [Tiny Tapeout Discord](https://tinytapeout.com/discord) and ask in the #analog channel.
 
 ## Enable GitHub actions to build the results page
 
