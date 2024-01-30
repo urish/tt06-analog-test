@@ -2,7 +2,7 @@
 
 // just a stub to keep the Tiny Tapeout tools happy
 
-module tt_um_example (
+module tt_um_analog_example (
     input  wire       VGND,
     input  wire       VPWR,
     input  wire [7:0] ui_in,
