@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "test with update"      # Project title
+  title:        "test with another update"      # Project title
   author:       "uri"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "analog test"      # One line description of what your project does
@@ -8,7 +8,7 @@ project:
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "2x2"          # Valid values: 1x1 (digital only), 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  tiles: "1x2"          # Valid values: 1x1 (digital only), 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_analog_example"
@@ -52,8 +52,6 @@ pinout:
   # Analog pins - you can add more if you use them, up to 8
   ua[0]: ""
   ua[1]: ""
-  ua[2]: ""
-  ua[3]: ""
 
 # Do not change!
 yaml_version: 6
